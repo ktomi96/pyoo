@@ -19,76 +19,90 @@ import uno
 
 
 # Filters used when saving document.
-FILTER_PDF_EXPORT = 'writer_pdf_Export'
-FILTER_WRITER_PDF_EXPORT = 'writer_pdf_Export'
-FILTER_CALC_PDF_EXPORT = 'calc_pdf_Export'
-FILTER_EXCEL_97 = 'MS Excel 97'
-FILTER_EXCEL_2007 = 'Calc MS Excel 2007 XML'
+FILTER_PDF_EXPORT = "writer_pdf_Export"
+FILTER_WRITER_PDF_EXPORT = "writer_pdf_Export"
+FILTER_CALC_PDF_EXPORT = "calc_pdf_Export"
+FILTER_EXCEL_97 = "MS Excel 97"
+FILTER_EXCEL_2007 = "Calc MS Excel 2007 XML"
 
 # Number format choices
-FORMAT_TEXT = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.TEXT')
-FORMAT_INT = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.NUMBER_INT')
-FORMAT_FLOAT = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.NUMBER_DEC2')
-FORMAT_INT_SEP = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.NUMBER_1000INT')
-FORMAT_FLOAT_SEP = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.NUMBER_1000DEC2')
-FORMAT_PERCENT_INT = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.PERCENT_INT')
-FORMAT_PERCENT_FLOAT = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.PERCENT_DEC2')
-FORMAT_DATE = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.DATE_SYSTEM_SHORT')
-FORMAT_TIME = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.TIME_HHMM')
-FORMAT_DATETIME = uno.getConstantByName('com.sun.star.i18n.NumberFormatIndex.DATETIME_SYSTEM_SHORT_HHMM')
+FORMAT_TEXT = uno.getConstantByName("com.sun.star.i18n.NumberFormatIndex.TEXT")
+FORMAT_INT = uno.getConstantByName("com.sun.star.i18n.NumberFormatIndex.NUMBER_INT")
+FORMAT_FLOAT = uno.getConstantByName("com.sun.star.i18n.NumberFormatIndex.NUMBER_DEC2")
+FORMAT_INT_SEP = uno.getConstantByName(
+    "com.sun.star.i18n.NumberFormatIndex.NUMBER_1000INT"
+)
+FORMAT_FLOAT_SEP = uno.getConstantByName(
+    "com.sun.star.i18n.NumberFormatIndex.NUMBER_1000DEC2"
+)
+FORMAT_PERCENT_INT = uno.getConstantByName(
+    "com.sun.star.i18n.NumberFormatIndex.PERCENT_INT"
+)
+FORMAT_PERCENT_FLOAT = uno.getConstantByName(
+    "com.sun.star.i18n.NumberFormatIndex.PERCENT_DEC2"
+)
+FORMAT_DATE = uno.getConstantByName(
+    "com.sun.star.i18n.NumberFormatIndex.DATE_SYSTEM_SHORT"
+)
+FORMAT_TIME = uno.getConstantByName("com.sun.star.i18n.NumberFormatIndex.TIME_HHMM")
+FORMAT_DATETIME = uno.getConstantByName(
+    "com.sun.star.i18n.NumberFormatIndex.DATETIME_SYSTEM_SHORT_HHMM"
+)
 
 # Font weight choices
-FONT_WEIGHT_DONTKNOW = uno.getConstantByName('com.sun.star.awt.FontWeight.DONTKNOW')
-FONT_WEIGHT_THIN = uno.getConstantByName('com.sun.star.awt.FontWeight.THIN')
-FONT_WEIGHT_ULTRALIGHT = uno.getConstantByName('com.sun.star.awt.FontWeight.ULTRALIGHT')
-FONT_WEIGHT_LIGHT = uno.getConstantByName('com.sun.star.awt.FontWeight.LIGHT')
-FONT_WEIGHT_SEMILIGHT = uno.getConstantByName('com.sun.star.awt.FontWeight.SEMILIGHT')
-FONT_WEIGHT_NORMAL = uno.getConstantByName('com.sun.star.awt.FontWeight.NORMAL')
-FONT_WEIGHT_SEMIBOLD = uno.getConstantByName('com.sun.star.awt.FontWeight.SEMIBOLD')
-FONT_WEIGHT_BOLD = uno.getConstantByName('com.sun.star.awt.FontWeight.BOLD')
-FONT_WEIGHT_ULTRABOLD = uno.getConstantByName('com.sun.star.awt.FontWeight.ULTRABOLD')
-FONT_WEIGHT_BLACK = uno.getConstantByName('com.sun.star.awt.FontWeight.BLACK')
+FONT_WEIGHT_DONTKNOW = uno.getConstantByName("com.sun.star.awt.FontWeight.DONTKNOW")
+FONT_WEIGHT_THIN = uno.getConstantByName("com.sun.star.awt.FontWeight.THIN")
+FONT_WEIGHT_ULTRALIGHT = uno.getConstantByName("com.sun.star.awt.FontWeight.ULTRALIGHT")
+FONT_WEIGHT_LIGHT = uno.getConstantByName("com.sun.star.awt.FontWeight.LIGHT")
+FONT_WEIGHT_SEMILIGHT = uno.getConstantByName("com.sun.star.awt.FontWeight.SEMILIGHT")
+FONT_WEIGHT_NORMAL = uno.getConstantByName("com.sun.star.awt.FontWeight.NORMAL")
+FONT_WEIGHT_SEMIBOLD = uno.getConstantByName("com.sun.star.awt.FontWeight.SEMIBOLD")
+FONT_WEIGHT_BOLD = uno.getConstantByName("com.sun.star.awt.FontWeight.BOLD")
+FONT_WEIGHT_ULTRABOLD = uno.getConstantByName("com.sun.star.awt.FontWeight.ULTRABOLD")
+FONT_WEIGHT_BLACK = uno.getConstantByName("com.sun.star.awt.FontWeight.BLACK")
 
 # Text underline choices (only first three are present here)
-UNDERLINE_NONE = uno.getConstantByName('com.sun.star.awt.FontUnderline.NONE')
-UNDERLINE_SINGLE = uno.getConstantByName('com.sun.star.awt.FontUnderline.SINGLE')
-UNDERLINE_DOUBLE = uno.getConstantByName('com.sun.star.awt.FontUnderline.DOUBLE')
+UNDERLINE_NONE = uno.getConstantByName("com.sun.star.awt.FontUnderline.NONE")
+UNDERLINE_SINGLE = uno.getConstantByName("com.sun.star.awt.FontUnderline.SINGLE")
+UNDERLINE_DOUBLE = uno.getConstantByName("com.sun.star.awt.FontUnderline.DOUBLE")
 
 
 # Text alignment choices
-TEXT_ALIGN_STANDARD = 'STANDARD'
-TEXT_ALIGN_LEFT = 'LEFT'
-TEXT_ALIGN_CENTER = 'CENTER'
-TEXT_ALIGN_RIGHT = 'RIGHT'
-TEXT_ALIGN_BLOCK = 'BLOCK'
-TEXT_ALIGN_REPEAT = 'REPEAT'
+TEXT_ALIGN_STANDARD = "STANDARD"
+TEXT_ALIGN_LEFT = "LEFT"
+TEXT_ALIGN_CENTER = "CENTER"
+TEXT_ALIGN_RIGHT = "RIGHT"
+TEXT_ALIGN_BLOCK = "BLOCK"
+TEXT_ALIGN_REPEAT = "REPEAT"
 
 # Axis choices
-AXIS_PRIMARY = uno.getConstantByName('com.sun.star.chart.ChartAxisAssign.PRIMARY_Y')
-AXIS_SECONDARY = uno.getConstantByName('com.sun.star.chart.ChartAxisAssign.SECONDARY_Y')
+AXIS_PRIMARY = uno.getConstantByName("com.sun.star.chart.ChartAxisAssign.PRIMARY_Y")
+AXIS_SECONDARY = uno.getConstantByName("com.sun.star.chart.ChartAxisAssign.SECONDARY_Y")
 
 # Exceptions thrown by UNO.
 # We try to catch them and re-throw Python standard exceptions.
-_IndexOutOfBoundsException = uno.getClass('com.sun.star.lang.IndexOutOfBoundsException')
-_NoSuchElementException = uno.getClass('com.sun.star.container.NoSuchElementException')
-_IOException = uno.getClass('com.sun.star.io.IOException')
+_IndexOutOfBoundsException = uno.getClass("com.sun.star.lang.IndexOutOfBoundsException")
+_NoSuchElementException = uno.getClass("com.sun.star.container.NoSuchElementException")
+_IOException = uno.getClass("com.sun.star.io.IOException")
 
-_NoConnectException = uno.getClass('com.sun.star.connection.NoConnectException')
-_ConnectionSetupException = uno.getClass('com.sun.star.connection.ConnectionSetupException')
+_NoConnectException = uno.getClass("com.sun.star.connection.NoConnectException")
+_ConnectionSetupException = uno.getClass(
+    "com.sun.star.connection.ConnectionSetupException"
+)
 
 
-UnoException = uno.getClass('com.sun.star.uno.Exception')
+UnoException = uno.getClass("com.sun.star.uno.Exception")
 
 
 PY2 = sys.version_info[0] == 2
 PY3 = sys.version_info[0] == 3
 
 if PY3:
-    string_types = str,
-    integer_types = int,
+    string_types = (str,)
+    integer_types = (int,)
     text_type = str
 else:
-    string_types = basestring,
+    string_types = (basestring,)
     integer_types = (int, long)
     text_type = unicode
     range = xrange
@@ -104,8 +118,8 @@ def str_repr(klass):
     """
     if PY2:
         klass.__unicode__ = klass.__str__
-        klass.__str__ = lambda self: self.__unicode__().encode('utf-8')
-    klass.__repr__ = lambda self: '<%s: %r>' % (self.__class__.__name__, str(self))
+        klass.__str__ = lambda self: self.__unicode__().encode("utf-8")
+    klass.__repr__ = lambda self: "<%s: %r>" % (self.__class__.__name__, str(self))
     return klass
 
 
@@ -134,23 +148,27 @@ def _clean_slice(key, length):
 
     """
     if key.step is not None:
-        raise NotImplementedError('Cell slice with step is not supported.')
+        raise NotImplementedError("Cell slice with step is not supported.")
     start, stop = key.start, key.stop
     if start is None:
         start = 0
     if stop is None:
         stop = length
     if not isinstance(start, integer_types):
-        raise TypeError('Cell indices must be integers, %s given.' % type(start).__name__)
+        raise TypeError(
+            "Cell indices must be integers, %s given." % type(start).__name__
+        )
     if not isinstance(stop, integer_types):
-        raise TypeError('Cell indices must be integers, %s given.' % type(stop).__name__)
+        raise TypeError(
+            "Cell indices must be integers, %s given." % type(stop).__name__
+        )
     if start < 0:
         start = start + length
     if stop < 0:
         stop = stop + length
     start, stop = max(0, start), min(length, stop)
     if start == stop:
-        raise ValueError('Cell slice can not be empty.')
+        raise ValueError("Cell slice can not be empty.")
     return start, stop
 
 
@@ -177,13 +195,13 @@ def _clean_index(key, length):
 
     """
     if not isinstance(key, integer_types):
-        raise TypeError('Cell indices must be integers, %s given.' % type(key).__name__)
+        raise TypeError("Cell indices must be integers, %s given." % type(key).__name__)
     if -length <= key < 0:
         return key + length
     elif 0 <= key < length:
         return key
     else:
-        raise IndexError('Cell index out of range.')
+        raise IndexError("Cell index out of range.")
 
 
 def _row_name(index):
@@ -196,7 +214,7 @@ def _row_name(index):
     '11'
 
     """
-    return '%d' % (index + 1)
+    return "%d" % (index + 1)
 
 
 def _col_name(index):
@@ -210,9 +228,11 @@ def _col_name(index):
 
     """
     for exp in itertools.count(1):
-        limit = 26 ** exp
+        limit = 26**exp
         if index < limit:
-            return ''.join(chr(ord('A') + index // (26 ** i) % 26) for i in range(exp-1, -1, -1))
+            return "".join(
+                chr(ord("A") + index // (26**i) % 26) for i in range(exp - 1, -1, -1)
+            )
         index -= limit
 
 
@@ -233,7 +253,7 @@ class SheetPosition(object):
 
     """
 
-    __slots__ = ('x', 'y', 'width', 'height')
+    __slots__ = ("x", "y", "width", "height")
 
     def __init__(self, x, y, width=0, height=0):
         self.x = x
@@ -243,9 +263,13 @@ class SheetPosition(object):
 
     def __str__(self):
         if self.width == self.height == 0:
-            return u'x=%d, y=%d' % (self.x, self.y)
-        return u'x=%d, y=%d, width=%d, height=%d' % (self.x, self.y,
-                                                    self.width, self.height)
+            return "x=%d, y=%d" % (self.x, self.y)
+        return "x=%d, y=%d, width=%d, height=%d" % (
+            self.x,
+            self.y,
+            self.width,
+            self.height,
+        )
 
     def replace(self, x=None, y=None, width=None, height=None):
         x = x if x is not None else self.x
@@ -259,12 +283,13 @@ class SheetPosition(object):
         return cls(position.X, position.Y, size.Width, size.Height)
 
     def _to_uno(self):
-        struct = uno.createUnoStruct('com.sun.star.awt.Rectangle')
+        struct = uno.createUnoStruct("com.sun.star.awt.Rectangle")
         struct.X = self.x
         struct.Y = self.y
         struct.Width = self.width
         struct.Height = self.height
         return struct
+
 
 @str_repr
 class SheetAddress(object):
@@ -283,7 +308,7 @@ class SheetAddress(object):
 
     """
 
-    __slots__ = ('row', 'col', 'row_count', 'col_count')
+    __slots__ = ("row", "col", "row_count", "col_count")
 
     def __init__(self, row, col, row_count=1, col_count=1):
         self.row, self.col = row, col
@@ -305,18 +330,18 @@ class SheetAddress(object):
         Returns this address as a string to be used in formulas.
         """
         if row_abs and col_abs:
-            fmt = u'$%s$%s'
+            fmt = "$%s$%s"
         elif row_abs:
-            fmt = u'%s$%s'
+            fmt = "%s$%s"
         elif col_abs:
-            fmt = u'$%s%s'
+            fmt = "$%s%s"
         else:
-            fmt = u'%s%s'
+            fmt = "%s%s"
         start = fmt % (_col_name(self.col), _row_name(self.row))
         if self.row_count == self.col_count == 1:
             return start
         end = fmt % (_col_name(self.col_end), _row_name(self.row_end))
-        return '%s:%s' % (start, end)
+        return "%s:%s" % (start, end)
 
     def replace(self, row=None, col=None, row_count=None, col_count=None):
         """
@@ -335,7 +360,7 @@ class SheetAddress(object):
         return cls(target.StartRow, target.StartColumn, row_count, col_count)
 
     def _to_uno(self, sheet):
-        struct = uno.createUnoStruct('com.sun.star.table.CellRangeAddress')
+        struct = uno.createUnoStruct("com.sun.star.table.CellRangeAddress")
         struct.Sheet = sheet
         struct.StartColumn = self.col
         struct.StartRow = self.row
@@ -348,14 +373,17 @@ class _UnoProxy(object):
     """
     Abstract base class for objects which act as a proxy to UNO objects.
     """
-    __slots__ = ('_target',)
+
+    __slots__ = ("_target",)
 
     def __init__(self, target):
         self._target = target
 
     def __repr__(self):
-        return '<%s: %r>' % (self.__class__.__name__,
-                             self._target.getSupportedServiceNames())
+        return "<%s: %r>" % (
+            self.__class__.__name__,
+            self._target.getSupportedServiceNames(),
+        )
 
 
 class NamedCollection(_UnoProxy):
@@ -379,13 +407,14 @@ class NamedCollection(_UnoProxy):
         if isinstance(key, string_types):
             target = self._get_by_name(key)
             return self._factory(target)
-        raise TypeError('%s must be accessed either by index or name.'
-                        % self.__class__.__name__)
+        raise TypeError(
+            "%s must be accessed either by index or name." % self.__class__.__name__
+        )
 
     # Internal:
 
     def _factory(self, target):
-        raise NotImplementedError # pragma: no cover
+        raise NotImplementedError  # pragma: no cover
 
     def _get_by_index(self, index):
         try:
@@ -418,38 +447,44 @@ class DiagramSeries(_UnoProxy):
         """
         Gets to which axis this series are assigned.
         """
-        return self._target.getPropertyValue('Axis')
+        return self._target.getPropertyValue("Axis")
+
     def __set_axis(self, value):
         """
         Sets to which axis this series are assigned.
         """
-        self._target.setPropertyValue('Axis', value)
+        self._target.setPropertyValue("Axis", value)
+
     axis = property(__get_axis, __set_axis)
 
     def __get_line_color(self):
         """
         Gets line color.
         """
-        return self._target.getPropertyValue('LineColor')
+        return self._target.getPropertyValue("LineColor")
+
     def __set_line_color(self, value):
         """
         Sets line color.
 
         Be aware that this call is sometimes ignored by OpenOffice.
         """
-        self._target.setPropertyValue('LineColor', value)
+        self._target.setPropertyValue("LineColor", value)
+
     line_color = property(__get_line_color, __set_line_color)
 
     def __get_fill_color(self):
         """
         Gets fill color.
         """
-        return self._target.getPropertyValue('FillColor')
+        return self._target.getPropertyValue("FillColor")
+
     def __set_fill_color(self, value):
         """
         Sets fill color.
         """
-        self._target.setPropertyValue('FillColor', value)
+        self._target.setPropertyValue("FillColor", value)
+
     fill_color = property(__get_fill_color, __set_fill_color)
 
 
@@ -489,11 +524,13 @@ class Axis(_UnoProxy):
         # Getting target.HasXAxis is a lot of faster then accessing
         # target.XAxis.Visible property.
         return self._target.getPropertyValue(self._has_axis_property)
+
     def __set_visible(self, value):
         """
         Sets whether this axis is visible.
         """
         return self._target.setPropertyValue(self._has_axis_property, value)
+
     visible = property(__get_visible, __set_visible)
 
     def __get_title(self):
@@ -501,7 +538,8 @@ class Axis(_UnoProxy):
         Gets title of this axis.
         """
         target = self._get_title_target()
-        return target.getPropertyValue('String')
+        return target.getPropertyValue("String")
+
     def __set_title(self, value):
         """
         Sets title of this axis.
@@ -512,7 +550,8 @@ class Axis(_UnoProxy):
         # target.XAxis.String is set to non empty value.)
         self._target.setPropertyValue(self._has_axis_title_property, True)
         target = self._get_title_target()
-        target.setPropertyValue('String', text_type(value))
+        target.setPropertyValue("String", text_type(value))
+
     title = property(__get_title, __set_title)
 
     def __get_logarithmic(self):
@@ -520,13 +559,15 @@ class Axis(_UnoProxy):
         Gets whether this axis has an logarithmic scale.
         """
         target = self._get_axis_target()
-        return target.getPropertyValue('Logarithmic')
+        return target.getPropertyValue("Logarithmic")
+
     def __set_logarithmic(self, value):
         """
         Sets whether this axis has an logarithmic scale.
         """
         target = self._get_axis_target()
-        target.setPropertyValue('Logarithmic', value)
+        target.setPropertyValue("Logarithmic", value)
+
     logarithmic = property(__get_logarithmic, __set_logarithmic)
 
     def __get_reversed(self):
@@ -534,15 +575,16 @@ class Axis(_UnoProxy):
         Gets whether this axis is reversed
         """
         target = self._get_axis_target()
-        return target.getPropertyValue('ReverseDirection')
+        return target.getPropertyValue("ReverseDirection")
+
     def __set_reversed(self, value):
         """
         Sets whether this axis is reversed
         """
         target = self._get_axis_target()
-        return target.setPropertyValue('ReverseDirection', value)
-    reversed = property(__get_reversed, __set_reversed)
+        return target.setPropertyValue("ReverseDirection", value)
 
+    reversed = property(__get_reversed, __set_reversed)
 
     # The _target property of this class does not hold the axis itself but
     # the owner diagram instance. So following methods and properties has
@@ -552,18 +594,18 @@ class Axis(_UnoProxy):
     _has_axis_title_property = None
 
     def _get_axis_target(self):
-        raise NotImplementedError # pragma: no cover
+        raise NotImplementedError  # pragma: no cover
 
     def _get_title_target(self):
-        raise NotImplementedError # pragma: no cover
+        raise NotImplementedError  # pragma: no cover
 
 
 class XAxis(Axis):
 
     __slots__ = ()
 
-    _has_axis_property = 'HasXAxis'
-    _has_axis_title_property = 'HasXAxisTitle'
+    _has_axis_property = "HasXAxis"
+    _has_axis_title_property = "HasXAxisTitle"
 
     def _get_axis_target(self):
         return self._target.getXAxis()
@@ -576,8 +618,8 @@ class YAxis(Axis):
 
     __slots__ = ()
 
-    _has_axis_property = 'HasYAxis'
-    _has_axis_title_property = 'HasYAxisTitle'
+    _has_axis_property = "HasYAxis"
+    _has_axis_title_property = "HasYAxisTitle"
 
     def _get_axis_target(self):
         return self._target.getYAxis()
@@ -590,8 +632,8 @@ class SecondaryXAxis(Axis):
 
     __slots__ = ()
 
-    _has_axis_property = 'HasSecondaryXAxis'
-    _has_axis_title_property = 'HasSecondaryXAxisTitle'
+    _has_axis_property = "HasSecondaryXAxis"
+    _has_axis_title_property = "HasSecondaryXAxisTitle"
 
     def _get_axis_target(self):
         return self._target.getSecondaryXAxis()
@@ -604,8 +646,8 @@ class SecondaryYAxis(Axis):
 
     __slots__ = ()
 
-    _has_axis_property = 'HasSecondaryYAxis'
-    _has_axis_title_property = 'HasSecondaryYAxisTitle'
+    _has_axis_property = "HasSecondaryYAxis"
+    _has_axis_title_property = "HasSecondaryYAxisTitle"
 
     def _get_axis_target(self):
         return self._target.getSecondaryYAxis()
@@ -669,12 +711,14 @@ class Diagram(_UnoProxy):
         """
         Gets whether series of the diagram are stacked.
         """
-        return self._target.getPropertyValue('Stacked')
+        return self._target.getPropertyValue("Stacked")
+
     def __set_is_stacked(self, value):
         """
         Sets whether series of the diagram are stacked.
         """
-        self._target.setPropertyValue('Stacked', value)
+        self._target.setPropertyValue("Stacked", value)
+
     is_stacked = property(__get_is_stacked, __set_is_stacked)
 
 
@@ -687,18 +731,20 @@ class BarDiagram(Diagram):
 
     __slots__ = ()
 
-    _type = 'com.sun.star.chart.BarDiagram'
+    _type = "com.sun.star.chart.BarDiagram"
 
     def __get_lines(self):
         """
         Gets count of series which are rendered as lines instead of lines.
         """
-        return self._target.getPropertyValue('NumberOfLines')
+        return self._target.getPropertyValue("NumberOfLines")
+
     def __set_lines(self, value):
         """
         Sets count of series which are rendered as lines instead of lines
         """
-        return self._target.setPropertyValue('NumberOfLines', value)
+        return self._target.setPropertyValue("NumberOfLines", value)
+
     lines = property(__get_lines, __set_lines)
 
     def __get_is_horizontal(self):
@@ -715,12 +761,14 @@ class BarDiagram(Diagram):
         # But the words "horizontal" and "vertical" simply mean opposite
         # of the UNO semantics. If you don't believe me then try to google
         # for "horizontal bar chart" and "vertical bar chart" images.
-        return self._target.getPropertyValue('Vertical')
+        return self._target.getPropertyValue("Vertical")
+
     def __set_is_horizontal(self, value):
         """
         Sets whether this diagram is rendered with horizontal bars.
         """
-        return self._target.setPropertyValue('Vertical', value)
+        return self._target.setPropertyValue("Vertical", value)
+
     is_horizontal = property(__get_is_horizontal, __set_is_horizontal)
 
     def __get_is_grouped(self):
@@ -732,12 +780,14 @@ class BarDiagram(Diagram):
         are grouped together in one block for each axis, thus they are
         painted one group over the other.
         """
-        return self._target.getPropertyValue('GroupBarsPerAxis')
+        return self._target.getPropertyValue("GroupBarsPerAxis")
+
     def __set_is_grouped(self, value):
         """
         Sets whether to group columns attached to different axis.
         """
-        return self._target.setPropertyValue('GroupBarsPerAxis', value)
+        return self._target.setPropertyValue("GroupBarsPerAxis", value)
+
     is_grouped = property(__get_is_grouped, __set_is_grouped)
 
 
@@ -750,12 +800,14 @@ class LineDiagram(Diagram):
 
     __slots__ = ()
 
-    _type = 'com.sun.star.chart.LineDiagram'
+    _type = "com.sun.star.chart.LineDiagram"
 
     def __get_spline(self):
-        return self._target.getPropertyValue('SplineType')
+        return self._target.getPropertyValue("SplineType")
+
     def __set_spline(self, value):
-        self._target.setPropertyValue('SplineType', int(value))
+        self._target.setPropertyValue("SplineType", int(value))
+
     spline = property(__get_spline, __set_spline)
 
 
@@ -771,7 +823,7 @@ class Chart(_UnoProxy):
     Chart
     """
 
-    __slots__ = ('sheet', '_embedded')
+    __slots__ = ("sheet", "_embedded")
 
     def __init__(self, sheet, target):
         self.sheet = sheet
@@ -838,7 +890,7 @@ class ChartCollection(NamedCollection):
     Collection of charts in one sheet.
     """
 
-    __slots__ = ('sheet',)
+    __slots__ = ("sheet",)
 
     def __init__(self, sheet, target):
         self.sheet = sheet
@@ -898,8 +950,14 @@ class SheetCursor(_UnoProxy):
 
     """
 
-    __slots__ = ('row', 'col', 'row_count', 'col_count',
-                 'max_row_count', 'max_col_count')
+    __slots__ = (
+        "row",
+        "col",
+        "row_count",
+        "col_count",
+        "max_row_count",
+        "max_col_count",
+    )
 
     def __init__(self, target):
         # Target must be com.sun.star.sheet.XSheetCellCursor
@@ -932,10 +990,17 @@ class SheetCursor(_UnoProxy):
         #
         target = self._target
         # If we cannot resize selection now then we must move cursor first.
-        if self.row + row_count > self.max_row_count or self.col + col_count > self.max_col_count:
+        if (
+            self.row + row_count > self.max_row_count
+            or self.col + col_count > self.max_col_count
+        ):
             # Move cursor to the desired position if possible.
-            row_delta = row - self.row if row + self.row_count <= self.max_row_count else 0
-            col_delta = col - self.col if col + self.col_count <= self.max_col_count else 0
+            row_delta = (
+                row - self.row if row + self.row_count <= self.max_row_count else 0
+            )
+            col_delta = (
+                col - self.col if col + self.col_count <= self.max_col_count else 0
+            )
             target.gotoOffset(col_delta, row_delta)
             self.row += row_delta
             self.col += col_delta
@@ -960,10 +1025,11 @@ class CellRange(object):
     This is an abstract base class implements cell manipulation functionality.
 
     """
+
     # Does not extend _UnoProxy because it uses sheet cursor internally
     # instead of direct reference to UNO object.
 
-    __slots__ = ('sheet', 'address')
+    __slots__ = ("sheet", "address")
 
     def __init__(self, sheet, address):
         self.sheet = sheet
@@ -978,7 +1044,7 @@ class CellRange(object):
         Physical position of this cells.
         """
         target = self._get_target()
-        position, size = target.getPropertyValues(('Position', 'Size'))
+        position, size = target.getPropertyValues(("Position", "Size"))
         return SheetPosition._from_uno(position, size)
 
     def __get_is_merged(self):
@@ -986,23 +1052,27 @@ class CellRange(object):
         Gets whether cells are merged.
         """
         return self._get_target().getIsMerged()
+
     def __set_is_merged(self, value):
         """
         Sets whether cells are merged.
         """
         self._get_target().merge(value)
+
     is_merged = property(__get_is_merged, __set_is_merged)
 
     def __get_number_format(self):
         """
         Gets format of numbers in this cells.
         """
-        return self._get_target().getPropertyValue('NumberFormat')
+        return self._get_target().getPropertyValue("NumberFormat")
+
     def __set_number_format(self, value):
         """
         Sets format of numbers in this cells.
         """
-        self._get_target().setPropertyValue('NumberFormat', value)
+        self._get_target().setPropertyValue("NumberFormat", value)
+
     number_format = property(__get_number_format, __set_number_format)
 
     def __get_text_align(self):
@@ -1011,7 +1081,8 @@ class CellRange(object):
 
         Returns one of TEXT_ALIGN_* constants.
         """
-        return self._get_target().getPropertyValue('HoriJustify').value
+        return self._get_target().getPropertyValue("HoriJustify").value
+
     def __set_text_align(self, value):
         """
         Sets horizontal alignment.
@@ -1021,33 +1092,38 @@ class CellRange(object):
         # The HoriJustify property contains is a struct.
         # We need to get it, update value and then set it back.
         target = self._get_target()
-        struct = target.getPropertyValue('HoriJustify')
+        struct = target.getPropertyValue("HoriJustify")
         struct.value = value
-        target.setPropertyValue('HoriJustify', struct)
+        target.setPropertyValue("HoriJustify", struct)
+
     text_align = property(__get_text_align, __set_text_align)
 
     def __get_font_size(self):
         """
         Gets font size.
         """
-        return self._get_target().getPropertyValue('CharHeight')
+        return self._get_target().getPropertyValue("CharHeight")
+
     def __set_font_size(self, value):
         """
         Sets font size.
         """
-        return self._get_target().setPropertyValue('CharHeight', value)
+        return self._get_target().setPropertyValue("CharHeight", value)
+
     font_size = property(__get_font_size, __set_font_size)
 
     def __get_font_weight(self):
         """
         Gets font weight.
         """
-        return self._get_target().getPropertyValue('CharWeight')
+        return self._get_target().getPropertyValue("CharWeight")
+
     def __set_font_weight(self, value):
         """
         Sets font weight.
         """
-        return self._get_target().setPropertyValue('CharWeight', value)
+        return self._get_target().setPropertyValue("CharWeight", value)
+
     font_weight = property(__get_font_weight, __set_font_weight)
 
     def __get_underline(self):
@@ -1056,14 +1132,16 @@ class CellRange(object):
 
         Returns UNDERLINE_* constants.
         """
-        return self._get_target().getPropertyValue('CharUnderline')
+        return self._get_target().getPropertyValue("CharUnderline")
+
     def __set_underline(self, value):
         """
         Sets text weight.
 
         Accepts UNDERLINE_* constants.
         """
-        return self._get_target().setPropertyValue('CharUnderline', value)
+        return self._get_target().setPropertyValue("CharUnderline", value)
+
     underline = property(__get_underline, __set_underline)
 
     def __get_text_color(self):
@@ -1073,10 +1151,11 @@ class CellRange(object):
         Color is returned as integer in format 0xAARRGGBB.
         Returns None if no the text color is not set.
         """
-        value = self._get_target().getPropertyValue('CharColor')
+        value = self._get_target().getPropertyValue("CharColor")
         if value == -1:
             value = None
         return value
+
     def __set_text_color(self, value):
         """
         Sets text color.
@@ -1086,7 +1165,8 @@ class CellRange(object):
         """
         if value is None:
             value = -1
-        return self._get_target().setPropertyValue('CharColor', value)
+        return self._get_target().setPropertyValue("CharColor", value)
+
     text_color = property(__get_text_color, __set_text_color)
 
     def __get_background_color(self):
@@ -1096,10 +1176,11 @@ class CellRange(object):
         Color is returned as integer in format 0xAARRGGBB.
         Returns None if the background color is not set.
         """
-        value = self._get_target().getPropertyValue('CellBackColor')
+        value = self._get_target().getPropertyValue("CellBackColor")
         if value == -1:
             value = None
         return value
+
     def __set_background_color(self, value):
         """
         Sets cell background color.
@@ -1109,7 +1190,8 @@ class CellRange(object):
         """
         if value is None:
             value = -1
-        return self._get_target().setPropertyValue('CellBackColor', value)
+        return self._get_target().setPropertyValue("CellBackColor", value)
+
     background_color = property(__get_background_color, __set_background_color)
 
     def __get_border_width(self):
@@ -1120,23 +1202,25 @@ class CellRange(object):
         """
         target = self._get_target()
         # Get four borders and test if all of them have same width.
-        keys = ('TopBorder', 'RightBorder', 'BottomBorder', 'LeftBorder')
+        keys = ("TopBorder", "RightBorder", "BottomBorder", "LeftBorder")
         lines = target.getPropertyValues(keys)
         values = [line.OuterLineWidth for line in lines]
         if any(value != values[0] for value in values):
             return 0
         return values[0]
+
     def __set_border_width(self, value):
         """
         Sets width of all cell borders (in 1/100 mm).
         """
         target = self._get_target()
-        line = uno.createUnoStruct('com.sun.star.table.BorderLine2')
+        line = uno.createUnoStruct("com.sun.star.table.BorderLine2")
         line.OuterLineWidth = value
         # Set all four borders using one call - this can save even a few seconds
-        keys = ('TopBorder', 'RightBorder', 'BottomBorder', 'LeftBorder')
+        keys = ("TopBorder", "RightBorder", "BottomBorder", "LeftBorder")
         lines = (line, line, line, line)
         target.setPropertyValues(keys, lines)
+
     border_width = property(__get_border_width, __set_border_width)
 
     def __get_one_border_width(self, key):
@@ -1146,23 +1230,32 @@ class CellRange(object):
         target = self._get_target()
         line = target.getPropertyValue(key)
         return line.OuterLineWidth
+
     def __set_one_border_width(self, value, key):
         """
         Sets width of one border.
         """
         target = self._get_target()
-        line = uno.createUnoStruct('com.sun.star.table.BorderLine2')
+        line = uno.createUnoStruct("com.sun.star.table.BorderLine2")
         line.OuterLineWidth = value
         target.setPropertyValue(key, line)
 
-    border_left_width = property(functools.partial(__get_one_border_width, key='LeftBorder'),
-                                 functools.partial(__set_one_border_width, key='LeftBorder'))
-    border_right_width = property(functools.partial(__get_one_border_width, key='RightBorder'),
-                                  functools.partial(__set_one_border_width, key='RightBorder'))
-    border_top_width = property(functools.partial(__get_one_border_width, key='TopBorder'),
-                                functools.partial(__set_one_border_width, key='TopBorder'))
-    border_bottom_width = property(functools.partial(__get_one_border_width, key='BottomBorder'),
-                                   functools.partial(__set_one_border_width, key='BottomBorder'))
+    border_left_width = property(
+        functools.partial(__get_one_border_width, key="LeftBorder"),
+        functools.partial(__set_one_border_width, key="LeftBorder"),
+    )
+    border_right_width = property(
+        functools.partial(__get_one_border_width, key="RightBorder"),
+        functools.partial(__set_one_border_width, key="RightBorder"),
+    )
+    border_top_width = property(
+        functools.partial(__get_one_border_width, key="TopBorder"),
+        functools.partial(__set_one_border_width, key="TopBorder"),
+    )
+    border_bottom_width = property(
+        functools.partial(__get_one_border_width, key="BottomBorder"),
+        functools.partial(__set_one_border_width, key="BottomBorder"),
+    )
 
     def __get_border_color(self):
         """
@@ -1172,7 +1265,7 @@ class CellRange(object):
         """
         target = self._get_target()
         # Get four borders and test if all of them have same color.
-        keys = ('TopBorder', 'RightBorder', 'BottomBorder', 'LeftBorder')
+        keys = ("TopBorder", "RightBorder", "BottomBorder", "LeftBorder")
         lines = target.getPropertyValues(keys)
         values = [line.Color for line in lines]
         if any(value != values[0] for value in values):
@@ -1184,14 +1277,15 @@ class CellRange(object):
         Sets color of all cell borders
         """
         target = self._get_target()
-        keys = ('TopBorder', 'RightBorder', 'BottomBorder', 'LeftBorder')
-        #Get current values of lines - required to save width
+        keys = ("TopBorder", "RightBorder", "BottomBorder", "LeftBorder")
+        # Get current values of lines - required to save width
         oldLines = target.getPropertyValues(keys)
-        #Change colour of all lines to value - Value is hex value of colour 0xFF00FF
+        # Change colour of all lines to value - Value is hex value of colour 0xFF00FF
         for line in oldLines:
             line.Color = value
         lines = (oldLines[0], oldLines[1], oldLines[2], oldLines[3])
         target.setPropertyValues(keys, lines)
+
     border_color = property(__get_border_color, __set_border_color)
 
     def __get_inner_border_width(self):
@@ -1201,25 +1295,26 @@ class CellRange(object):
         Returns 0 if cell borders are different.
         """
         target = self._get_target()
-        tb = target.getPropertyValue('TableBorder')
+        tb = target.getPropertyValue("TableBorder")
         horizontal = tb.HorizontalLine.OuterLineWidth
         vertical = tb.VerticalLine.OuterLineWidth
         if horizontal != vertical:
             return 0
         return horizontal
+
     def __set_inner_border_width(self, value):
         """
         Sets with of inner border between cells (in 1/100 mm).
         """
         target = self._get_target()
         # Inner borders are saved in a TableBorder struct.
-        line = uno.createUnoStruct('com.sun.star.table.BorderLine2')
+        line = uno.createUnoStruct("com.sun.star.table.BorderLine2")
         line.OuterLineWidth = value
-        tb = target.getPropertyValue('TableBorder')
+        tb = target.getPropertyValue("TableBorder")
         tb.HorizontalLine = tb.VerticalLine = line
-        target.setPropertyValue('TableBorder', tb)
-    inner_border_width = property(__get_inner_border_width,
-                                  __set_inner_border_width)
+        target.setPropertyValue("TableBorder", tb)
+
+    inner_border_width = property(__get_inner_border_width, __set_inner_border_width)
 
     # Internal methods:
 
@@ -1229,8 +1324,9 @@ class CellRange(object):
         """
         address = self.address
         cursor = self.sheet.cursor
-        return cursor.get_target(address.row, address.col,
-                                 address.row_count, address.col_count)
+        return cursor.get_target(
+            address.row, address.col, address.row_count, address.col_count
+        )
 
     def _convert(self, value):
         if isinstance(value, numbers.Real):
@@ -1261,7 +1357,7 @@ class CellRange(object):
         Validates and converts formula before assigning it to a cell.
         """
         if value is None:
-            return ''
+            return ""
         return self._convert(value)
 
 
@@ -1282,12 +1378,14 @@ class Cell(CellRange):
         """
         array = self._get_target().getDataArray()
         return array[0][0]
+
     def __set_value(self, value):
         """
         Sets cell value to a string or number based on the given value.
         """
         array = ((self._clean_value(value),),)
         return self._get_target().setDataArray(array)
+
     value = property(__get_value, __set_value)
 
     def __get_formula(self):
@@ -1299,6 +1397,7 @@ class Cell(CellRange):
         """
         array = self._get_target().getFormulaArray()
         return array[0][0]
+
     def __set_formula(self, formula):
         """
         Sets a formula in this cell.
@@ -1308,6 +1407,7 @@ class Cell(CellRange):
         """
         array = ((self._clean_formula(formula),),)
         return self._get_target().setFormulaArray(array)
+
     formula = property(__get_formula, __set_formula)
 
     @property
@@ -1352,7 +1452,7 @@ class TabularCellRange(CellRange):
             # expression cells[start:stop] is equal to cells[start:stop, :].
             key = (key, slice(None))
         elif len(key) != 2:
-            raise ValueError('Cell range has two dimensions.')
+            raise ValueError("Cell range has two dimensions.")
         address = self.address
         row_val, col_val = key
         if isinstance(row_val, slice):
@@ -1387,6 +1487,7 @@ class TabularCellRange(CellRange):
         """
         array = self._get_target().getDataArray()
         return array
+
     def __set_values(self, values):
         """
         Sets values in this cell range from an iterable of iterables.
@@ -1394,6 +1495,7 @@ class TabularCellRange(CellRange):
         # Tuple of tuples is required
         array = tuple(tuple(self._clean_value(col) for col in row) for row in values)
         self._get_target().setDataArray(array)
+
     values = property(__get_values, __set_values)
 
     def __get_formulas(self):
@@ -1404,6 +1506,7 @@ class TabularCellRange(CellRange):
         with an equal sign  but all values are returned.
         """
         return self._get_target().getFormulaArray()
+
     def __set_formulas(self, formulas):
         """
         Sets formulas in this cell range from an iterable of iterables.
@@ -1412,8 +1515,11 @@ class TabularCellRange(CellRange):
         start with an equal sign.
         """
         # Tuple of tuples is required
-        array = tuple(tuple(self._clean_formula(col) for col in row) for row in formulas)
+        array = tuple(
+            tuple(self._clean_formula(col) for col in row) for row in formulas
+        )
         self._get_target().setFormulaArray(array)
+
     formulas = property(__get_formulas, __set_formulas)
 
 
@@ -1437,8 +1543,12 @@ class HorizontalCellRange(CellRange):
     def __getitem__(self, key):
         if isinstance(key, slice):
             start, stop = _clean_slice(key, len(self))
-            address = SheetAddress(self.address.row, self.address.col + start,
-                                   self.address.row_count, stop - start)
+            address = SheetAddress(
+                self.address.row,
+                self.address.col + start,
+                self.address.row_count,
+                stop - start,
+            )
             return HorizontalCellRange(self.sheet, address)
         else:
             index = _clean_index(key, len(self))
@@ -1451,12 +1561,14 @@ class HorizontalCellRange(CellRange):
         """
         array = self._get_target().getDataArray()
         return array[0]
+
     def __set_values(self, values):
         """
         Sets values in this cell range from an iterable.
         """
         array = (tuple(self._clean_value(v) for v in values),)
         self._get_target().setDataArray(array)
+
     values = property(__get_values, __set_values)
 
     def __get_formulas(self):
@@ -1468,6 +1580,7 @@ class HorizontalCellRange(CellRange):
         """
         array = self._get_target().getFormulaArray()
         return array[0]
+
     def __set_formulas(self, formulas):
         """
         Sets formulas in this cell range from an iterable.
@@ -1477,6 +1590,7 @@ class HorizontalCellRange(CellRange):
         """
         array = (tuple(self._clean_formula(v) for v in formulas),)
         return self._get_target().setFormulaArray(array)
+
     formulas = property(__get_formulas, __set_formulas)
 
 
@@ -1500,12 +1614,16 @@ class VerticalCellRange(CellRange):
     def __getitem__(self, key):
         if isinstance(key, slice):
             start, stop = _clean_slice(key, len(self))
-            address = SheetAddress(self.address.row  + start, self.address.col,
-                                   stop - start, self.address.col_count)
+            address = SheetAddress(
+                self.address.row + start,
+                self.address.col,
+                stop - start,
+                self.address.col_count,
+            )
             return HorizontalCellRange(self.sheet, address)
         else:
             index = _clean_index(key, len(self))
-            address = SheetAddress(self.address.row  + index, self.address.col)
+            address = SheetAddress(self.address.row + index, self.address.col)
             return Cell(self.sheet, address)
 
     def __get_values(self):
@@ -1516,6 +1634,7 @@ class VerticalCellRange(CellRange):
         """
         array = self._get_target().getDataArray()
         return tuple(itertools.chain.from_iterable(array))
+
     def __set_values(self, values):
         """
         Sets values in this cell range from an iterable.
@@ -1524,6 +1643,7 @@ class VerticalCellRange(CellRange):
         """
         array = tuple((self._clean_value(v),) for v in values)
         self._get_target().setDataArray(array)
+
     values = property(__get_values, __set_values)
 
     def __get_formulas(self):
@@ -1535,6 +1655,7 @@ class VerticalCellRange(CellRange):
         """
         array = self._get_target().getFormulaArray()
         return tuple(itertools.chain.from_iterable(array))
+
     def __set_formulas(self, formulas):
         """
         Sets formulas in this cell range from an iterable.
@@ -1544,6 +1665,7 @@ class VerticalCellRange(CellRange):
         """
         array = tuple((self._clean_formula(v),) for v in formulas)
         self._get_target().setFormulaArray(array)
+
     formulas = property(__get_formulas, __set_formulas)
 
 
@@ -1560,11 +1682,11 @@ class Sheet(TabularCellRange):
 
     """
 
-    __slots__ = ('document', '_target', 'cursor')
+    __slots__ = ("document", "_target", "cursor")
 
     def __init__(self, document, target):
-        self.document = document # Parent SpreadsheetDocument.
-        self._target = target # UNO com.sun.star.sheet.XSpreadsheet
+        self.document = document  # Parent SpreadsheetDocument.
+        self._target = target  # UNO com.sun.star.sheet.XSpreadsheet
         # This cursor will be used for most of the operation in this sheet.
         self.cursor = SheetCursor(target.createCursor())
         # Determine size of this sheet using the created cursor.
@@ -1587,12 +1709,14 @@ class Sheet(TabularCellRange):
         Gets a name of this sheet.
         """
         # This should be cached if used more often.
-        return self._target.getName();
+        return self._target.getName()
+
     def __set_name(self, value):
         """
         Sets a name of this sheet.
         """
-        return self._target.setName(value);
+        return self._target.setName(value)
+
     name = property(__get_name, __set_name)
 
     @property
@@ -1602,16 +1726,17 @@ class Sheet(TabularCellRange):
 
     def delete_rows(self, row_index, number_of_rows=1):
         if number_of_rows < 1:
-            raise ValueError('Number of rows to delete must be positive and not zero.')
+            raise ValueError("Number of rows to delete must be positive and not zero.")
 
         self._target.Spreadsheet.Rows.removeByIndex(row_index, number_of_rows)
 
     def delete_columns(self, column_index, number_of_columns=1):
         if number_of_columns < 1:
-            raise ValueError('Number of columns to delete must be positive and not zero.')
+            raise ValueError(
+                "Number of columns to delete must be positive and not zero."
+            )
 
         self._target.Spreadsheet.Columns.removeByIndex(column_index, number_of_columns)
-
 
 
 class SpreadsheetCollection(NamedCollection):
@@ -1623,10 +1748,10 @@ class SpreadsheetCollection(NamedCollection):
 
     """
 
-    __slots__ = ('document',)
+    __slots__ = ("document",)
 
     def __init__(self, document, target):
-        self.document = document # Parent SpreadsheetDocument
+        self.document = document  # Parent SpreadsheetDocument
         super(SpreadsheetCollection, self).__init__(target)
 
     def __delitem__(self, key):
@@ -1687,7 +1812,7 @@ class Locale(object):
 
     """
 
-    __slots__ = ('_locale', '_formats')
+    __slots__ = ("_locale", "_formats")
 
     def __init__(self, locale, formats):
         self._locale = locale
@@ -1730,8 +1855,8 @@ class SpreadsheetDocument(_UnoProxy):
         # UNO requires absolute paths
         url = uno.systemPathToFileUrl(os.path.abspath(path))
         if filter_name:
-            format_filter = uno.createUnoStruct('com.sun.star.beans.PropertyValue')
-            format_filter.Name = 'FilterName'
+            format_filter = uno.createUnoStruct("com.sun.star.beans.PropertyValue")
+            format_filter.Name = "FilterName"
             format_filter.Value = filter_name
             filters = (format_filter,)
         else:
@@ -1754,7 +1879,7 @@ class SpreadsheetDocument(_UnoProxy):
         Returns locale which can be used for access to number formats.
         """
         # http://www.openoffice.org/api/docs/common/ref/com/sun/star/lang/Locale.html
-        locale = uno.createUnoStruct('com.sun.star.lang.Locale')
+        locale = uno.createUnoStruct("com.sun.star.lang.Locale")
         if language:
             locale.Language = language
         if country:
@@ -1829,23 +1954,25 @@ class SpreadsheetDocument(_UnoProxy):
             return self.__null_date
         except AttributeError:
             number_settings = self._target.getNumberFormatSettings()
-            d = number_settings.getPropertyValue('NullDate')
+            d = number_settings.getPropertyValue("NullDate")
             self.__null_date = datetime.datetime(d.Year, d.Month, d.Day)
         return self.__null_date
 
 
 def _get_connection_url(hostname, port, pipe=None):
     if pipe:
-        conn = 'pipe,name=%s' % pipe
+        conn = "pipe,name=%s" % pipe
     else:
-        conn = 'socket,host=%s,port=%d' % (hostname, port)
-    return 'uno:%s;urp;StarOffice.ComponentContext' % conn
+        conn = "socket,host=%s,port=%d" % (hostname, port)
+    return "uno:%s;urp;StarOffice.ComponentContext" % conn
+
 
 def _get_remote_context(resolver, url):
     try:
         return resolver.resolve(url)
     except _NoConnectException:
         raise IOError(resolver, url)
+
 
 class Desktop(_UnoProxy):
     """
@@ -1859,19 +1986,23 @@ class Desktop(_UnoProxy):
 
     """
 
-    def __init__(self, hostname='localhost', port=2002, pipe=None):
+    def __init__(self, hostname="localhost", port=2002, pipe=None):
         url = _get_connection_url(hostname, port, pipe)
         self.local_context = uno.getComponentContext()
-        resolver = self.local_context.getServiceManager().createInstanceWithContext('com.sun.star.bridge.UnoUrlResolver', self.local_context)
+        resolver = self.local_context.getServiceManager().createInstanceWithContext(
+            "com.sun.star.bridge.UnoUrlResolver", self.local_context
+        )
         self.remote_context = _get_remote_context(resolver, url)
-        desktop = self.remote_context.getServiceManager().createInstanceWithContext('com.sun.star.frame.Desktop', self.remote_context)
+        desktop = self.remote_context.getServiceManager().createInstanceWithContext(
+            "com.sun.star.frame.Desktop", self.remote_context
+        )
         super(Desktop, self).__init__(desktop)
 
     def create_spreadsheet(self):
         """
         Creates a new spreadsheet document.
         """
-        url = 'private:factory/scalc'
+        url = "private:factory/scalc"
         document = self._open_url(url)
         return SpreadsheetDocument(document)
 
@@ -1881,13 +2012,13 @@ class Desktop(_UnoProxy):
         """
         extra = ()
         if as_template:
-            pv = uno.createUnoStruct('com.sun.star.beans.PropertyValue')
-            pv.Name = 'AsTemplate'
+            pv = uno.createUnoStruct("com.sun.star.beans.PropertyValue")
+            pv.Name = "AsTemplate"
             pv.Value = True
             extra += (pv,)
         if read_only:
-            pv = uno.createUnoStruct('com.sun.star.beans.PropertyValue')
-            pv.Name = 'ReadOnly'
+            pv = uno.createUnoStruct("com.sun.star.beans.PropertyValue")
+            pv.Name = "ReadOnly"
             pv.Value = True
             extra += (pv,)
         # UNO requires absolute paths
@@ -1898,7 +2029,7 @@ class Desktop(_UnoProxy):
     def _open_url(self, url, extra=()):
         # http://www.openoffice.org/api/docs/common/ref/com/sun/star/frame/XComponentLoader.html#loadComponentFromURL
         try:
-            return self._target.loadComponentFromURL(url, '_blank', 0, extra)
+            return self._target.loadComponentFromURL(url, "_blank", 0, extra)
         except _IOException as e:
             raise IOError(e.Message)
 
@@ -1916,7 +2047,7 @@ class LazyDesktop(object):
 
     cls = Desktop
 
-    def __init__(self, hostname='localhost', port=2002, pipe=None):
+    def __init__(self, hostname="localhost", port=2002, pipe=None):
         self.hostname = hostname
         self.port = port
         self.pipe = pipe
@@ -1942,7 +2073,7 @@ class NameGenerator(object):
 
     Keeps track of used names and does not return one value twice.
 
-    Names must not contain characters []*?:\/.
+    Names must not contain characters []*?:\\/.
     Names (in older versions of OO) must have length of 31 chars maximum.
     Names must be unique (case insensitive).
     """
@@ -1950,18 +2081,18 @@ class NameGenerator(object):
     max_length = 31
 
     def __init__(self):
-        self._invalid = set([''])
+        self._invalid = set([""])
 
     def __call__(self, name):
         name = text_type(name)
-        for char in '[]*?:\/':
-            name = name.replace(char, '')
+        for char in "[]*?:\\/":
+            name = name.replace(char, "")
         for i in itertools.count(1):
             if name:
-                suffix = ' %d' % i if i > 1 else ''
-                candidate = name[:self.max_length - len(suffix)] + suffix
+                suffix = " %d" % i if i > 1 else ""
+                candidate = name[: self.max_length - len(suffix)] + suffix
             else:
-                candidate = '%d' % i
+                candidate = "%d" % i
             if candidate.lower() not in self._invalid:
                 break
         self._invalid.add(candidate.lower())
